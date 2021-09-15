@@ -25,7 +25,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmy-Ck-VFQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="Dnz-Rq-nQt"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Dnz-Rq-nQt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -33,7 +33,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCz-zZ-wBB">
                                                 <rect key="frame" x="0.0" y="70" width="200" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="7N9-uf-E29"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="7N9-uf-E29"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
