@@ -48,7 +48,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Log in"/>
                                                 <connections>
-                                                    <segue destination="8qc-mu-he8" kind="show" id="Izn-S5-t0v"/>
+                                                    <segue destination="8qc-mu-he8" kind="show" id="naH-iy-l52"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-UB-UVq" userLabel="Forgot Stack View">
@@ -58,11 +58,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="141" height="33"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="Forgot Username?"/>
+                                                        <connections>
+                                                            <action selector="forgotUsernameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUC-N5-tKN"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UId-qR-1ga">
                                                         <rect key="frame" x="196" y="0.0" width="136" height="33"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="Forgot Password?"/>
+                                                        <connections>
+                                                            <action selector="forgotPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnI-gm-61Y"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -82,7 +88,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="9ee-Rt-Nx9"/>
                     <connections>
+                        <outlet property="forgotPasswordButton" destination="UId-qR-1ga" id="KcL-75-t49"/>
+                        <outlet property="forgotUsernameButton" destination="MqH-dB-3D5" id="IaD-gi-L6l"/>
                         <outlet property="usernameTextField" destination="Tmy-Ck-VFQ" id="hrP-BP-f4S"/>
+                        <segue destination="8qc-mu-he8" kind="show" identifier="Forgot Username/Password" id="WjX-ZQ-jWr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,6 +133,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WjX-ZQ-jWr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
